@@ -1,0 +1,30 @@
+@(
+  title: String = "Software Code",
+  bundle: views.Bundle = views.Bundle()
+)(
+  content: Html
+)
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>@title</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/reset.css")"/>
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/main.css")"/>
+    @bundle.stylesheets.map { x => <link rel="stylesheet" href="@x"/> }
+    @bundle.javascripts.map { x => <script src="@x" type="text/javascript"></script> }
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>@title</h1>
+      </header>
+      @content
+      <footer>
+      </footer>
+    </div>
+  </body>
+</html>

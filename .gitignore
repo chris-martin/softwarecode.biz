@@ -1,0 +1,7 @@
+/target
+/web/target
+/project/target
+/project/project/target
+/web/RUNNING_PID
+/.history
+/logs
