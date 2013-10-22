@@ -1,0 +1,24 @@
+@import "defs.less";
+
+html, body {
+  height: 100%;
+}
+
+header {
+  font-size: 48pt;
+  font-weight: bold;
+  font-family: monospace;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  height: 100%;
+
+  @media @small { width: 600px; }
+  @media @medium { width: 800px; }
+  @media @large { width: 1300px; }
+}

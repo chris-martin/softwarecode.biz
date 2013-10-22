@@ -5,7 +5,37 @@
     views.Bundle.stylesheets(routes.Assets.at("stylesheets/index.css").url)
 ) {
 
-  <p>The paeg under contruction
-  </p>
+  <svg viewBox="3 3 97 97" class="endorsement">
+    <rect x="4" y="4" width="92" height="92" style="fill: #333;" rx="17"></rect>
+    <rect x="4" y="4" width="91" height="91" style="fill: #111;" rx="17"></rect>
+    <image x="5" y="5" width="90" height="90" xlink:href="/assets/images/dijkstra.jpg" style="filter:url(#desaturate)" clip-path="url(#photo-clip)"></image>
+    <text style="fill: yellow; font-size: 5pt; stroke: black; stroke-width: 0.2px; font-weight: bold; font-family: Droid Serif;">
+      <tspan x="10" y="50">&ldquo;I always use</tspan>
+      <tspan x="10" dy="1.5em">SOFTWARE CODE.BIZ</tspan>
+      <tspan x="10" dy="1.5em">for all of my codes&rdquo;</tspan>
+      <tspan x="10" dy="2em">- Edsger W. Dijkstra</tspan>
+    </text>
+  </svg>
+
+  <ol>
+    <li>Website</li>
+    <li>Algorithm</li>
+    <li>Sequel</li>
+    <li>Python</li>
+    <li>Loops</li>
+    <li>Linux</li>
+  </ol>
+
+  <svg style="height: 0;">
+    <defs>
+      <filter id="desaturate">
+        <feColorMatrix type="saturate" values="0.4"></feColorMatrix>
+      </filter>
+      <rect id="photo-clip-rect" x="5" y="5" width="90" height="90" rx="15"></rect>
+      <clipPath id="photo-clip" clipPathUnits="userSpaceOnUse">
+        <use xlink:href="#photo-clip-rect"></use>
+      </clipPath>
+    </defs>
+  </svg>
 
 }
